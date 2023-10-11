@@ -1,24 +1,34 @@
+import React from 'react';
+
 import './App.css';
 
-function App() {
+class App extends React.Component() {
   
-  const blogobj = {
+  blogobj = {
     title: 'Blog Title 1'
   }
 
-  const style = {
+  style = {
     color: 'red',
     fontSize: '2rem'
   }
 
 
-  return (
-    <div className="App">
+   btnclick = () => {
+    alert('click');
+  }
+
+  render () {
+    return (
+      <div className="App">
       <div style={style}>
         <h3>{blogobj.title}</h3>
+        <button onClick={btnclick}>Hide</button>
       </div>
     </div>
-  );
+    );
+  }
+
 }
 
 export default App;
