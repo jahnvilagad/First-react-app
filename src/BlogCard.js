@@ -2,7 +2,7 @@ import React from "react";
 
 import { dumpLogs } from "./Utills";
 
-import classes from './App.css'
+import classes from './BlogCard.module.css'
 
 const BlogCard = (props) => {
     dumpLogs(props);

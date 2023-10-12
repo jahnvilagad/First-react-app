@@ -1,0 +1,14 @@
+.Topbar{
+    background-color: #282c34;
+    text-align: center;
+    padding: 24px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  
+  .Topbar h1{
+    margin: 0;
+    color:#fff;
+  }
