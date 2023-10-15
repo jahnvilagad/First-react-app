@@ -6,6 +6,7 @@ import React from 'react';
 // import Topbar from './Topbar';
 
 import ComA from './ComA';
+import { Restaurant } from './Components/Basics/Restaurant';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
         </div>
       </div> */}
 
-      <ComA />
+      {/* <ComA /> */}
+
+      <Restaurant />
     </div>
   )
 
