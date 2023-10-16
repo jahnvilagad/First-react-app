@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const ComA = () => {
-    const [ num, setNum] =  useState();
+    const [num, setNum] =  useState();
     const [name, setName] = useState();
     const [move, setMove] = useState();
 
-    // useEffect(() =>{
-    //     // alert("hi");
+    useEffect(() =>{
+        // alert("hi");
 
-    //     async function getData() {
-    //         const res = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/aegislash/${num}`);
-    //         console.log(res.data);
-    //         setName(res.data.name);
-    //         setMove(res.data.move.length);
-    //     }
-    //      getData();
-    // });
+        async function getData() {
+            const res = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/aegislash/${num}`);
+            console.log(res.data);
+            setName(res.data.name);
+            setMove(res.data.move.length);
+        }
+         getData();
+    });
 
     return (
         <>
